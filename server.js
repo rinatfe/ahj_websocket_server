@@ -33,7 +33,7 @@ app.use(async (ctx)=> {
     }
     if(method == 'deleteUser') {
         let user = ctx.request.body;
-        users.splice(users.findIndex(x=> x.name == user), 1);
+        users.splice(users.findIndex(x => x.name == user), 1);
     }
 });
 
